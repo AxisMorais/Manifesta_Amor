@@ -1,0 +1,140 @@
+/*Fontes Utilizadas nos Títulos */
+.dosis-h2 {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: #6B3148;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #F6D5D6;
+  color: #333;
+  scroll-behavior: smooth; /* Faz o deslizamento suave */
+}
+
+/* Cabeçalho principal */
+header {
+  background-color: #6B3148;
+  color: #f3f2f2;
+  text-align: center;
+  display: flex;
+  justify-content:center ; /* space-between Alinha logo à esquerda e menu à direita */
+  align-items: center;
+  padding: 10px 20px; /* Ajuste de espaçamento */
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+/* Logo Imagem do canto esquerdo do header */
+.logo{
+  width: auto;     /* Mantém o tamanho original da logo */
+  height: 40px;    /* Defina a altura para encaixar no header */
+  object-fit: contain;
+  display: block;
+}
+
+
+/* Imagem do banner  */
+.banner-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+header h1 {
+  margin: 10px 0;
+  font-size: 2rem;
+}
+
+header p {
+  font-size: 1rem;
+}
+
+nav ul {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: #faf8f8;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #B67B83;
+}
+
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.section p {
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+}
+
+.section img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#contatoBtn {
+  background-color: #8db596;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contatoBtn:hover {
+  background-color: #F6D5D6;
+}
+
+footer {
+  background-color: #F6D5D6;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
