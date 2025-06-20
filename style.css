@@ -22,24 +22,91 @@ body {
   scroll-behavior: smooth; /* Faz o deslizamento suave */
 }
 
-/* Cabeçalho principal */
+
+/* ----------------------------- */
+/* Cabeçalho principal - MODIFICADO */
+/* ----------------------------- */
 header {
   background-color: #6B3148;
   color: #f3f2f2;
-  text-align: center;
   display: flex;
-  justify-content:center ; /* space-between Alinha logo à esquerda e menu à direita */
+  flex-direction: column; /* Logo em cima, menu embaixo */
   align-items: center;
-  padding: 10px 20px; /* Ajuste de espaçamento */
+  padding: 20px;
   width: 100%;
   box-sizing: border-box;
-
 }
 
+/* Container da logo - MODIFICADO */
+.header-logo {
+  margin-bottom: 12px; /* Espaço entre logo e menu */
+}
+
+/* Logo - MODIFICADO */
+.logo {
+  width: auto;
+  height: 80px; /* Aumentei a altura para melhor visualização */
+  object-fit: contain;
+  display: block;
+}
+
+/* Menu - MODIFICADO */
+/* Menu - itens lado a lado */
+/* Container do menu */
+.menuItem {
+  display: flex;
+  gap: 5px; /* Reduzi o espaçamento entre itens */
+  padding: 0;
+  margin: 10px 0 0 0; /* Espaço acima do menu reduzido */
+}
+
+/* Itens do menu (links) */
+.menuItem a {
+  font-family: "Dosis", sans-serif;
+  color: #faf8f8;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  
+  /* Tamanho base para mobile (ideal como está) */
+  font-size: 14px; 
+  
+  /* Aumenta para desktop */
+  @media (min-width: 768px) {
+    font-size: 18px; /* Tamanho maior para desktop */
+  }
+  
+  /* Tamanho extra grande para telas maiores */
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+/* Efeito hover mantido */
+.menuItem a:hover {
+  background-color: #B67B83;
+}
+
+
+.divHeader_1{
+ top: 10%;
+  left: 0;
+  width: 10%;
+  z-index: 2; /* Garante que fique acima */ 
+}
+.divHeader_2{
+ position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+}
+*/
 /* Logo Imagem do canto esquerdo do header */
-.logo{
-  width: auto;     /* Mantém o tamanho original da logo */
-  height: 40px;    /* Defina a altura para encaixar no header */
+.logo {
+  width: auto;    /* Mantém o tamanho original da logo */
+  height: 30px;   /* Defina a altura para encaixar no header */
   object-fit: contain;
   display: block;
 }
@@ -52,7 +119,8 @@ header {
   object-fit: cover;
   display: block;
 }
-
+/* --------------------------- */
+/* Sessoes Títulos e Icones do site  */
 header h1 {
   margin: 10px 0;
   font-size: 2rem;
@@ -60,32 +128,6 @@ header h1 {
 
 header p {
   font-size: 1rem;
-}
-
-nav ul {
-  font-family: "Dosis", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-nav ul li a {
-  color: #faf8f8;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 5px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-  background-color: #B67B83;
 }
 
 .section {
