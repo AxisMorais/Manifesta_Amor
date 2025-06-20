@@ -45,7 +45,7 @@ header {
 /* Logo - MODIFICADO */
 .logo {
   width: auto;
-  height: 90px; /* Aumentei a altura para melhor visualização */
+  height: 60px; /* Aumentei a altura para melhor visualização */
   object-fit: contain;
   display: block;
 }
