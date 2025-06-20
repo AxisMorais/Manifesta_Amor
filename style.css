@@ -39,30 +39,30 @@ header {
 
 /* Container da logo - MODIFICADO */
 .header-logo {
-  margin-bottom: 12px; /* Espaço entre logo e menu */
+  margin-bottom: 10px; /* Espaço entre logo e menu */
 }
 
 /* Logo - MODIFICADO */
 .logo {
   width: auto;
-  height: 80px; /* Aumentei a altura para melhor visualização */
+  height: 110px; /* Aumentei a altura para melhor visualização */
   object-fit: contain;
   display: block;
 }
 
-/* Menu - MODIFICADO */
+
 /* Menu - itens lado a lado */
-/* Container do menu */
 .menuItem {
   display: flex;
-  gap: 5px; /* Reduzi o espaçamento entre itens */
+  gap: 4px; /* Reduzi o espaçamento entre itens */
   padding: 0;
-  margin: 10px 0 0 0; /* Espaço acima do menu reduzido */
+  margin: 5px 0 0 0; /* Espaço acima do menu reduzido */
 }
 
 /* Itens do menu (links) */
 .menuItem a {
   font-family: "Dosis", sans-serif;
+  font-weight: bold;
   color: #faf8f8;
   text-decoration: none;
   padding: 8px 12px;
