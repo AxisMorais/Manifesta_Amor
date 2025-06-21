@@ -9,17 +9,16 @@
 
 /* Reset básico */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0px 0px 0px 0px;
+  
 }
 
 
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
   background-color: #F6D5D6;
-  color: #333;
-  scroll-behavior: smooth; /* Faz o deslizamento suave */
+  height: 100%;
+  width: 100%;
+  
 }
 
 
@@ -28,25 +27,26 @@ body {
 /* ----------------------------- */
 header {
   background-color: #6B3148;
-  color: #f3f2f2;
-  display: flex;
+  display: flex; /*Centralizad a logo e os itens do menu */
   flex-direction: column; /* Logo em cima, menu embaixo */
   align-items: center;
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
+  padding-right: 10px;
+  
+  
 }
 
 /* Container da logo - MODIFICADO */
 .header-logo {
-  margin-bottom: 10px; /* Espaço entre logo e menu */
+  margin-top:5%; /*Espaçamento entre a logo e o topo superior da caixa */
+  margin-bottom: 5%; /* Espaço entre logo e menu */
+
 }
 
 /* Logo - MODIFICADO */
 .logo {
-  margin-right: 60px;
+  margin: 5px 10px 2px 10px; /*desloca a logo para esquera, direita cima baixo ao aumentar o valor*/
   width: auto;
-  height: 60px; /* Aumentei a altura para melhor visualização */
+  height: 70px; /* Aumentei a altura para melhor visualização */
   object-fit: contain;
   display: block;
 }
@@ -54,9 +54,11 @@ header {
 
 /* Menu - itens lado a lado */
 .menuItem {
+  margin: 1px -2px 2px 2px;
+  white-space: nowrap;
   display: flex;
-  gap: 4px; /* Reduzi o espaçamento entre itens */
-  padding: 0;
+  /* gap: 2px;  Reduzi o espaçamento entre itens */
+  padding: 2px; /*Aumenta o tamanho da caixa roxa do cabeçalho /*
   margin: 5px 0 0 0; /* Espaço acima do menu reduzido */
 }
 
@@ -66,7 +68,7 @@ header {
   font-weight: bold;
   color: #faf8f8;
   text-decoration: none;
-  padding: 8px 12px;
+  padding: 3px 5px; /* Garante o espaçamento entre os itens do menu */
   border-radius: 5px;
   transition: all 0.3s ease;
   
