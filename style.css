@@ -44,6 +44,7 @@ header {
 
 /* Logo - MODIFICADO */
 .logo {
+  margin-right: 60px;
   width: auto;
   height: 60px; /* Aumentei a altura para melhor visualização */
   object-fit: contain;
