@@ -44,7 +44,7 @@ header {
 
 /* Logo - MODIFICADO */
 .logo {
-  margin: 5px 10px 2px 10px; /*desloca a logo para esquera, direita cima baixo ao aumentar o valor*/
+  margin: 12px 12px 12px 12px; /*desloca a logo para esquera, direita cima baixo ao aumentar o valor*/
   width: auto;
   height: 70px; /* Aumentei a altura para melhor visualização */
   object-fit: contain;
