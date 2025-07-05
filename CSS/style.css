@@ -73,11 +73,11 @@ header {
   transition: all 0.3s ease;
   
   /* Tamanho base para mobile (ideal como está) */
-  font-size: 16px; 
+  font-size: 14px; 
   
   /* Aumenta para desktop */
   @media (min-width: 768px) {
-    font-size: 18px; /* Tamanho maior para desktop */
+    font-size: 19px; /* Tamanho maior para desktop */
   }
   
   /* Tamanho extra grande para telas maiores */
