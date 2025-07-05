@@ -1,0 +1,205 @@
+/*Fontes Utilizadas nos Títulos */
+.dosis-h2 {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: #6B3148;
+}
+
+/* Reset básico */
+* {
+  margin: 0px 0px 0px 0px;
+  
+}
+
+
+body {
+  background-color: #F6D5D6;
+  height: 100%;
+  width: 100%;
+  
+}
+
+
+/* ----------------------------- */
+/* Cabeçalho principal - MODIFICADO */
+/* ----------------------------- */
+header {
+  background-color: #6B3148;
+  display: flex; /*Centralizad a logo e os itens do menu */
+  flex-direction: column; /* Logo em cima, menu embaixo */
+  align-items: center;
+  padding-right: 10px;
+  
+  
+}
+
+/* Container da logo - MODIFICADO */
+.header-logo {
+  margin-top:5%; /*Espaçamento entre a logo e o topo superior da caixa */
+  margin-bottom: 5%; /* Espaço entre logo e menu */
+
+}
+
+/* Logo - MODIFICADO */
+.logo {
+  margin: 12px 12px 12px 12px; /*desloca a logo para esquera, direita cima baixo ao aumentar o valor*/
+  width: auto;
+  height: 90px; /* Aumentei a altura para melhor visualização */
+  object-fit: contain;
+  display: block;
+}
+
+
+/* Menu - itens lado a lado */
+.menuItem {
+  margin: 2px -2px 5px 4px;
+  white-space: nowrap;
+  display: flex;
+  /* gap: 2px;  Reduzi o espaçamento entre itens */
+  padding: 2px; /*Aumenta o tamanho da caixa roxa do cabeçalho /*
+  margin: 5px 0 0 0; /* Espaço acima do menu reduzido */
+}
+
+/* Itens do menu (links) */
+.menuItem a {
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  color: #faf8f8;
+  text-decoration: none;
+  padding: 3px 5px; /* Garante o espaçamento entre os itens do menu */
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  
+  /* Tamanho base para mobile (ideal como está) */
+  font-size: 16px; 
+  
+  /* Aumenta para desktop */
+  @media (min-width: 768px) {
+    font-size: 18px; /* Tamanho maior para desktop */
+  }
+  
+  /* Tamanho extra grande para telas maiores */
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+/* Efeito hover mantido */
+.menuItem a:hover {
+  background-color: #B67B83;
+}
+
+
+.divHeader_1{
+ top: 10%;
+  left: 0;
+  width: 10%;
+  z-index: 2; /* Garante que fique acima */ 
+}
+.divHeader_2{
+ position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+}
+*/
+/* Logo Imagem do canto esquerdo do header */
+.logo {
+  width: auto;    /* Mantém o tamanho original da logo */
+  height: 30px;   /* Defina a altura para encaixar no header */
+  object-fit: contain;
+  display: block;
+}
+
+
+/* Imagem do banner  */
+.banner-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+/* --------------------------- */
+/* Sessoes Títulos e Icones do site  */
+header h1 {
+  margin: 10px 0;
+  font-size: 2rem;
+}
+
+header p {
+  font-size: 1rem;
+}
+
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.section p {
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+}
+
+.section img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#contatoBtn {
+  background-color: #8db596;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contatoBtn:hover {
+  background-color: #F6D5D6;
+}
+
+footer {
+  background-color: #F6D5D6;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* --------------------------- */
+/* SESSÃO PRINCIPAL - VÍDEO   */
+
+/* Espaço da div */
+.video {
+  height: 100%;
+  width: 100%;
+  max-width: 100%; /* Ocupa todo o espaço disponível */
+  margin: 0 auto;
+ 
+}
+/* Espaço do vídeo */
+.instagram-video {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9; /* ou 4 / 3, dependendo do vídeo */
+ 
+  object-fit: cover;
+}
