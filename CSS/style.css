@@ -185,21 +185,41 @@ footer {
 }
 
 /* --------------------------- */
-/* SESSÃO PRINCIPAL - VÍDEO   */
-
-/* Espaço da div */
+/* SESSÃO PRINCIPAL - DIV VÍDEO   */
 .video {
-  height: 100%;
   width: 100%;
-  max-width: 100%; /* Ocupa todo o espaço disponível */
-  margin: 0 auto;
- 
+  height: 100%;
+  margin: auto;  /* Margem superior/inferior 0, laterais automática */
+  overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites */
+
 }
-/* Espaço do vídeo */
+
+/* Estilos para mobile (default) */
 .instagram-video {
   width: 100%;
   height: 100%;
-  aspect-ratio: 16 / 9; /* ou 4 / 3, dependendo do vídeo */
+  max-height: 70vh; /* Limita a altura em dispositivos móveis */
+  object-fit: fill; 
+}
+
+/* Estilos para desktop */
+@media (min-width: 768px) {
+  .instagram-video {
+    height: 900%;
  
-  object-fit: cover;
+   /*---------------------------------------------------------
+      observar aqui!
+ 
+   /*--------------------------------------------
+    width: 50%; /* Ajustar a largura do vídeo  */ 
+    max-height: 4vh; /* Aumenta a altura máxima para desktop */
+     /* aspect-ratio: 4/8; /* Mantém a proporção para desktop */
+  }
+}
+
+/* Estilos para telas muito grandes */
+@media (min-width: 1200px) {
+  .instagram-video {
+    max-height: 90vh; /* Altura ainda maior para telas grandes */
+  }
 }
