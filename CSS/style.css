@@ -210,8 +210,8 @@ footer {
    /*---------------------------------------------------------
       observar aqui!
  
-   /*--------------------------------------------
-    width: 50%; /* Ajustar a largura do vídeo  */ 
+   /*--------------------------------------------  */ 
+    width: 50%; /* Ajustar a largura do vídeo 
     max-height: 4vh; /* Aumenta a altura máxima para desktop */
      /* aspect-ratio: 4/8; /* Mantém a proporção para desktop */
   }
